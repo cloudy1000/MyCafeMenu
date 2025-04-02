@@ -1,0 +1,160 @@
+.grid-main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: rgb(0, 0, 0);
+  gap: 2rem;
+  flex: 2.5; /* takes 2.5/3.5 of the screen */
+  overflow: auto;
+  align-items: center;
+  padding: 1rem;
+}
+
+.grid-child {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* vertically center */
+  flex-direction: column;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.menu-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #daf1f4ff;
+}
+
+.type-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #e9e9ff;
+}
+
+.sidebar {
+  flex: 1; /* takes 1/3.5 of the screen */
+  background-color: beige;
+  padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  border-left: dotted;
+}
+
+.item-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar-btns {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 1rem;
+}
+
+.sidebar-btns button {
+  font-size: large;
+}
+
+.sidebar-btns button:hover {
+  background-color: rgb(249, 249, 178);
+}
+
+.welcome-message {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #daf1f4ff;
+  height: 100vh;
+}
+
+.typing-text {
+  font-size: 5rem;
+  font-weight: bold;
+  min-height: 20rem; /* prevents shifting */
+}
+
+.order-btns button {
+  background-color: beige;
+  border: dotted;
+  font-size: xx-large;
+}
+
+.order-btns button:hover {
+  background-color: rgb(249, 249, 178);
+  border: dotted;
+  font-size: xx-large;
+}
+
+.order-btns {
+  flex-direction: row;
+  display: flex;
+  gap: 2rem;
+}
+
+.list .count {
+  color: rgb(6, 157, 46);
+  font-weight: bold;
+}
+
+.list {
+  margin-right: 1.5rem;
+}
+
+.images {
+  width: 9rem;
+  height: 9rem;
+  border: dotted;
+}
+
+.gifs {
+  width: 9rem;
+  height: 9rem;
+  border: none;
+}
+
+.cost {
+  color: rgb(179, 0, 0);
+}
+
+.toppings {
+  font-size: 1rem;
+}
+
+.receipt-container {
+  background-color: #daf1f4ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.receipt-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.order-summary {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.receipt-container button {
+  width: 10%;
+}
+
+.receipt-container button:hover {
+  background-color: beige;
+}
