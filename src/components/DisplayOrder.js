@@ -21,7 +21,7 @@ function DisplayOrder() {
         <div className="sidebar">
             <h2>Your Order</h2>
             {selectedItems.length === 0 ? (
-                <Typography style={{fontSize: "large"}}>No items added yet.</Typography>
+                <Typography style={{fontSize: "large"}}>No items added.</Typography>
             ) : (
                 <ul>
                     {selectedItems.map((item) => (
