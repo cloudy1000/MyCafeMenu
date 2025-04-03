@@ -86,7 +86,8 @@
   }
 
   .grid-main {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* stacks items in a single row */
+    flex: 1;
   }
 }
 
