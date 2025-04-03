@@ -88,7 +88,7 @@ export default function CakeModal({ modalSelections }) {
                     checked={selectedFromModal.includes(choice)}
                     onChange={handleCheckboxChange}
                   />
-                  {choice}{choice === "Whole Cake" ? ` $${currentItem.cost.whole.toFixed(2)}` : ` $${currentItem.cost.slice.toFixed(2)}`}
+                  {choice}{choice === "Whole Cake" && currentItem ? ` $${currentItem.cost.whole?.toFixed(2)}` : currentItem ? ` $${currentItem.cost.slice?.toFixed(2)}` : null}
                 </label>
               </div>
             ))}
