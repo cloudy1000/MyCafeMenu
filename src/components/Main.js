@@ -8,54 +8,54 @@ import Receipt from './Receipt';
 
 function Main() {
   const fruitteas = [
-    { id: 'passion_fruittea', title: 'Passion Fruit Tea', cost: 6.25, src: 'Pixel_Images/passionfruittea.PNG' },
-    { id: 'mangostrawberry_fruittea', title: 'Mango Strawberry Fruit Tea', cost: 6.25, src: 'Pixel_Images/mangostrawberryfruittea.PNG' },
-    { id: 'pineapple_fruittea', title: 'Pineapple Fruit Tea', cost: 6.25, src: 'Pixel_Images/pineapplefruittea.PNG' },
-    { id: 'lychee_fruittea', title: 'Lychee Fruit Tea', cost: 6.25, src: 'Pixel_Images/lycheefruittea.PNG' } 
+    { id: 'passion_fruittea', title: 'Passion Fruit Tea', cost: 6.25, src: 'Pixel_Images/passionfruittea.png' },
+    { id: 'mangostrawberry_fruittea', title: 'Mango Strawberry Fruit Tea', cost: 6.25, src: 'Pixel_Images/mangostrawberryfruittea.png' },
+    { id: 'pineapple_fruittea', title: 'Pineapple Fruit Tea', cost: 6.25, src: 'Pixel_Images/pineapplefruittea.png' },
+    { id: 'lychee_fruittea', title: 'Lychee Fruit Tea', cost: 6.25, src: 'Pixel_Images/lycheefruittea.png' } 
   ];
 
   const milkteas = [
-      { id: 'brownsugar_milktea', title: 'Brown Sugar Milk Tea', cost: 7.25, src: 'Pixel_Images/brownsugar.PNG' },
-      { id: 'mango_milktea', title: 'Mango Milk Tea', cost: 7.25, src: 'Pixel_Images/mangomilktea.PNG' },
-      { id: 'strawberry_milktea', title: 'Strawberry Milk Tea', cost: 7.25, src: 'Pixel_Images/strawberrymilktea.PNG' },
-      { id: 'taro_milktea', title: 'Taro Milk Tea', cost: 7.25, src: 'Pixel_Images/taromilktea.PNG' },
-      { id: 'saltedcaramel_milktea', title: 'Salted Caramel Milk Tea', cost: 7.25, src: 'Pixel_Images/saltedcaramelmilktea.PNG' },
-      { id: 'thaitea_milktea', title: 'Thai Tea', cost: 7.25, src: 'Pixel_Images/thaitea.PNG' }
+      { id: 'brownsugar_milktea', title: 'Brown Sugar Milk Tea', cost: 7.25, src: 'Pixel_Images/brownsugar.png' },
+      { id: 'mango_milktea', title: 'Mango Milk Tea', cost: 7.25, src: 'Pixel_Images/mangomilktea.png' },
+      { id: 'strawberry_milktea', title: 'Strawberry Milk Tea', cost: 7.25, src: 'Pixel_Images/strawberrymilktea.png' },
+      { id: 'taro_milktea', title: 'Taro Milk Tea', cost: 7.25, src: 'Pixel_Images/taromilktea.png' },
+      { id: 'saltedcaramel_milktea', title: 'Salted Caramel Milk Tea', cost: 7.25, src: 'Pixel_Images/saltedcaramelmilktea.png' },
+      { id: 'thaitea_milktea', title: 'Thai Tea', cost: 7.25, src: 'Pixel_Images/thaitea.png' }
   ];
 
   const smoothies = [
-      { id: 'taro_smoothie', title: 'Taro Smoothie', cost: 8.00, src: 'Pixel_Images/tarosmoothie.PNG' },
-      { id: 'mango_smoothie', title: 'Mango Smoothie', cost: 8.00, src: 'Pixel_Images/mangosmoothie.PNG' },
-      { id: 'strawberry_smoothie', title: 'Strawberry Smoothie', cost: 8.00, src: 'Pixel_Images/strawberrysmoothie.PNG' },
-      { id: 'avocado_smoothie', title: 'Avocado Smoothie', cost: 8.00, src: 'Pixel_Images/avocadosmoothie.PNG' },
-      { id: 'coffeecaramel_smoothie', title: 'Cofffee Caramel Smoothie', cost: 8.00, src: 'Pixel_Images/coffeecaramelsmoothie.PNG' }
+      { id: 'taro_smoothie', title: 'Taro Smoothie', cost: 8.00, src: 'Pixel_Images/tarosmoothie.png' },
+      { id: 'mango_smoothie', title: 'Mango Smoothie', cost: 8.00, src: 'Pixel_Images/mangosmoothie.png' },
+      { id: 'strawberry_smoothie', title: 'Strawberry Smoothie', cost: 8.00, src: 'Pixel_Images/strawberrysmoothie.png' },
+      { id: 'avocado_smoothie', title: 'Avocado Smoothie', cost: 8.00, src: 'Pixel_Images/avocadosmoothie.png' },
+      { id: 'coffeecaramel_smoothie', title: 'Cofffee Caramel Smoothie', cost: 8.00, src: 'Pixel_Images/coffeecaramelsmoothie.png' }
   ];
 
   const coffees = [
-    { id: 'egg_coffee', title: 'Egg Coffee', cost: 7.50, src: 'Pixel_Images/eggcoffee.PNG' },
-    { id: 'seasalt_coffee', title: 'Seasalt Coffee', cost: 7.50, src: 'Pixel_Images/seasaltcoffee.PNG' },
-    { id: 'caramel_coffee', title: 'Caramel Coffee', cost: 7.50, src: 'Pixel_Images/caramelcoffee.PNG' }
+    { id: 'egg_coffee', title: 'Egg Coffee', cost: 7.50, src: 'Pixel_Images/eggcoffee.png' },
+    { id: 'seasalt_coffee', title: 'Seasalt Coffee', cost: 7.50, src: 'Pixel_Images/seasaltcoffee.png' },
+    { id: 'caramel_coffee', title: 'Caramel Coffee', cost: 7.50, src: 'Pixel_Images/caramelcoffee.png' }
   ]
 
   const icecreams = [
-    { id: 'chocolate_icecream', title: 'Chocolate Icecream', cost: 5.50, src: 'Pixel_Images/chocolateicecream.PNG' },
-    { id: 'vanilla_icecream', title: 'Vanilla Icecream', cost: 5.50, src: 'Pixel_Images/vanillaicecream.PNG' },
-    { id: 'strawberry_icecream', title: 'Strawberry Icecream', cost: 5.50, src: 'Pixel_Images/strawberryicecream.PNG' },
-    { id: 'coconut_icecream', title: 'Coconut Icecream', cost: 6.00, src: 'Pixel_Images/coconuticecream.PNG' },
-    { id: 'matcha_icecream', title: 'Matcha Icecream', cost: 6.50, src: 'Pixel_Images/matchaicecream.PNG' }
+    { id: 'chocolate_icecream', title: 'Chocolate Icecream', cost: 5.50, src: 'Pixel_Images/chocolateicecream.png' },
+    { id: 'vanilla_icecream', title: 'Vanilla Icecream', cost: 5.50, src: 'Pixel_Images/vanillaicecream.png' },
+    { id: 'strawberry_icecream', title: 'Strawberry Icecream', cost: 5.50, src: 'Pixel_Images/strawberryicecream.png' },
+    { id: 'coconut_icecream', title: 'Coconut Icecream', cost: 6.00, src: 'Pixel_Images/coconuticecream.png' },
+    { id: 'matcha_icecream', title: 'Matcha Icecream', cost: 6.50, src: 'Pixel_Images/matchaicecream.png' }
   ];
 
   const cakes = [
-    { id: 'mangocrepe_cake', title: 'Mango Crepe Roll Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/mangocrepe.PNG' },
-    { id: 'strawberrycrepe_cake', title: 'Strawberry Crepe Roll Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/strawberrycrepe.PNG' },
-    { id: 'matchacrepe_cake', title: 'Matcha Crepe Roll Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/matchacrepe.PNG' },
-    { id: 'matchastrawberry_cake', title: 'Strawberry Matcha Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/matchastrawberrycake.PNG' },
-    { id: 'caramel_cake', title: 'Caramel Buttercream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/caramelcake.PNG' },
-    { id: 'chocolate_cake', title: 'Chocolate Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/chocolatecake.PNG' },
-    { id: 'mixedberry_cake', title: 'Mixed Berry Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/mixedberrycake.PNG' },
-    { id: 'mango_cake', title: 'Mango Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/mangocake.PNG' },
-    { id: 'peach_cake', title: 'Peach Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/peachcake.PNG' },
-    { id: 'tiramisu_cake', title: 'Tiramisu Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/tiramisu.PNG' }
+    { id: 'mangocrepe_cake', title: 'Mango Crepe Roll Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/mangocrepe.png' },
+    { id: 'strawberrycrepe_cake', title: 'Strawberry Crepe Roll Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/strawberrycrepe.png' },
+    { id: 'matchacrepe_cake', title: 'Matcha Crepe Roll Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/matchacrepe.png' },
+    { id: 'matchastrawberry_cake', title: 'Strawberry Matcha Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/matchastrawberrycake.png' },
+    { id: 'caramel_cake', title: 'Caramel Buttercream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/caramelcake.png' },
+    { id: 'chocolate_cake', title: 'Chocolate Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/chocolatecake.png' },
+    { id: 'mixedberry_cake', title: 'Mixed Berry Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/mixedberrycake.png' },
+    { id: 'mango_cake', title: 'Mango Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/mangocake.png' },
+    { id: 'peach_cake', title: 'Peach Fresh Cream Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/peachcake.png' },
+    { id: 'tiramisu_cake', title: 'Tiramisu Cake', cost: { whole: 35.50, slice: 7.35 }, src: 'Pixel_Images/tiramisu.png' }
   ];
 
   const foods = [
