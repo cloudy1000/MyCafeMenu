@@ -17,9 +17,9 @@ function Home() {
                     "We have a wide selection of beverages, desserts, food, and cakes!"
                     ]}
                     loop={Infinity}
-                    typeSpeed={50}
+                    typeSpeed={0}
                     deleteSpeed={0}
-                    delaySpeed={3000}
+                    delaySpeed={6000}
                 />
             </p>
             <div className='order-btns'>
