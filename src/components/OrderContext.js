@@ -15,11 +15,6 @@ export const OrderProvider = ({ children }) => {
         setSelectedItems((prevItems) => [...prevItems, newItem]);
     };
 
-    const addCakeToList = (title, count, cost) => {
-        const newItem = { id: uuidv4(), title, count, cost };
-        setSelectedItems((prevItems) => [...prevItems, newItem]);
-    };
-
     const handleOpen = (item) => { // open modal for drink upon user click
         setOpen(true); // open modal
         setSelectedFromModal([]);
@@ -29,7 +24,7 @@ export const OrderProvider = ({ children }) => {
     const calculateOrderTotal = () => {
         const cost = selectedItems.reduce((acc, item) => {
             let itemTotal = item.cost;
-            if (item.selectedFromModal) {
+            if (item.selectedFromModal.length !== 0) {
                 itemTotal += item.selectedFromModal.reduce((sum, selection) => sum + selection.cost, 0);
             }
             if (item.count > 1) {
@@ -43,7 +38,7 @@ export const OrderProvider = ({ children }) => {
     const clearItems = () => setSelectedItems([]);
 
     return (
-        <OrderContext.Provider value={{ totalCost, selectedItems, open, currentItem, selectedFromModal, setSelectedItems, setSelectedFromModal, setOpen, addItemsToList, addCakeToList, handleOpen, clearItems, setTotalCost, calculateOrderTotal }}>
+        <OrderContext.Provider value={{ totalCost, selectedItems, open, currentItem, selectedFromModal, setSelectedItems, setSelectedFromModal, setOpen, addItemsToList, handleOpen, clearItems, setTotalCost, calculateOrderTotal }}>
             {children}
         </OrderContext.Provider>
     );

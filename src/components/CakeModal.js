@@ -17,7 +17,7 @@ const style = {
 };
 
 export default function CakeModal({ modalSelections }) {
-  const { selectedItems, setSelectedItems, addCakeToList, open, setOpen, currentItem, selectedFromModal, setSelectedFromModal } = useContext(OrderContext);
+  const { selectedItems, setSelectedItems, addItemsToList, open, setOpen, currentItem, selectedFromModal, setSelectedFromModal } = useContext(OrderContext);
   
   const wholeChecked = selectedFromModal.includes("Whole Cake");
   const sliceChecked = selectedFromModal.includes("Slice Cake");
@@ -39,14 +39,14 @@ export default function CakeModal({ modalSelections }) {
         updateItem(whole);
     }
     else if (wholeChecked) {
-        addCakeToList(currentItem.title, 1, currentItem.cost.whole);
+        addItemsToList(currentItem.title, [], 1, currentItem.cost.whole);
     }
     if (slice) {
         slice.count++;
         updateItem(slice);
     }
     else if (sliceChecked) {
-        addCakeToList(currentItem.title + " (Slice)", 1, currentItem.cost.slice);
+        addItemsToList(currentItem.title + " (Slice)", [], 1, currentItem.cost.slice);
     }
     setOpen(false);
   };
