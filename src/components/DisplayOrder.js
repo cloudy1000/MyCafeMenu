@@ -30,8 +30,7 @@ function DisplayOrder() {
                                 <span>{item.title}</span>
                                 <span className='count'>{` x${item.count}`}</span>
                                 <span className='cost'>{` $${item.cost.toFixed(2)}`}</span>
-                                {/* <span>{item.title.toLowerCase().includes("cake") ? null : <pre style={{marginTop: "0"}}>{item.selectedFromModal.map(selection => `- ${selection.title} $${selection.cost}`).join("\n")}</pre>}</span>   */}
-                                <span className='toppings'>{item.title.toLowerCase().includes("cake") ? null : (<div style={{ marginTop: "0", whiteSpace: "pre-wrap" }}>{item.selectedFromModal.map((selection, index) => (<div key={index}>- {selection.title}<span style={{ color: "rgb(179, 0, 0)" }}> ${selection.cost}</span></div>))}</div>)}</span>
+                                <span className='toppings'>{item.selectedFromModal.length === 0 ? null : (<div style={{ marginTop: "0", whiteSpace: "pre-wrap" }}>{item.selectedFromModal.map((selection, index) => (<div key={index}>- {selection.title}<span style={{ color: "rgb(179, 0, 0)" }}> ${selection.cost}</span></div>))}</div>)}</span>
                             </div>
                         </li>
                     ))}
