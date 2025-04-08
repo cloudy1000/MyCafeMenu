@@ -10,10 +10,10 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: { xs: 250, sm: 350, md: 400 },
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  bgcolor: 'rgb(234, 240, 252)',
+  border: '2px solid rgb(14, 82, 255)',
   boxShadow: 24,
-  p: 4,
+  p: 4
 };
 
 export default function ItemModal({ modalSelections }) {
@@ -81,8 +81,8 @@ export default function ItemModal({ modalSelections }) {
               </div>
             ))}
           </div>
-          <Button type="submit">Add</Button>
-          <Button onClick={handleClose}>Cancel</Button>
+          <Button type="submit" sx={{mt: 2, backgroundColor: 'rgb(76, 127, 255)', color: 'white', '&:hover': {backgroundColor: 'rgb(14, 82, 255)'}, mr: 1}}>Add</Button>
+          <Button onClick={handleClose} sx={{mt: 2, backgroundColor: 'rgb(76, 127, 255)', color: 'white', '&:hover': {backgroundColor: 'rgb(14, 82, 255)'}}}>Cancel</Button>
         </form>
       </Box>
     </Modal>
