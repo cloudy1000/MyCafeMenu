@@ -4,7 +4,8 @@
   color: rgb(0, 0, 0);
   gap: 2rem;
   flex: 2.5; /* takes 2.5/3.5 of the screen */
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   align-items: center;
   padding: 1rem;
 }
